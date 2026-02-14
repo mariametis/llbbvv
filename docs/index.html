@@ -14,29 +14,12 @@
 
 <body>
 
-<div id="content">
   <br>
   <a href="maps/index.html">2MASS and UKIDSS charts</a><br>
   <a href="maps/index_glimpse.html">GLIMPSE and MIPSGAL charts</a><br>
   <a href="maps/index_wise.html">WISE charts</a><br>
   <a href="gaia/index.html">BPRP spectra, LC_gaia, LC_asas</a><br>
-</div>
 
-<!-- MD5 library for hashing -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script>
-
-<script>
-  /* ONLY the hash is stored - corresponds to "pippo" */
-  const hash = "a2750d694307232f86da12a0685a9676"; 
-
-  const pw = prompt("Enter access code:");
-
-  if (pw !== null && md5(pw) === hash) {
-    document.getElementById("content").style.display = "block";
-  } else {
-    document.body.innerHTML = "<h2>Access denied</h2><p>Incorrect code or canceled.</p>";
-  }
-</script>
 
 </body>
 </html>
